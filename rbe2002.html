@@ -40,9 +40,8 @@
 									<!-- Box -->
 									<div class="box">
 										<h3>Project Goal</h3>
-										<p>To simulate robots tasked with replacement of solar collector panels on
-											planet with two suns. There will be two types of solar collectors mounted at two different
-											angles. On each side of the solar farm roof there will be an old solar panel to be replaced with a new one.</p>
+										<p>To customize and program a set of three Pololu Romi robots to work together to escape from a grid-based maze that uses a variety of indicators (beacons, tags) to help the robot
+											find the escape door. The robots need to use sensors to read information from indicators and share the information with other robots via Wi-Fi.</p>
 									</div>
 									<!-- Box -->
 									<div class="box">
@@ -50,9 +49,9 @@
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<ul>
-													<li>Designed a four-bar mechanism attached onto the robot using SolidWorks to pick and place metal plates and built the robotic arm with screws and bolts.</li>
-													<li>Developed a gear box to allow a 9N&hyphen;cm programmed motor to lift the four&hyphen;bar robotic arm to place the solar panel within a specified tolerance of 5mm</li>
-													<li>Customized a robotic gripper to hold the metal plate tightly in place while the robot is navigating the field.</li>
+													<li>Developed a PD wall following algorithm to allow the robot to follow the wall of the maze using sensor data from a ultrasonic rangefinder.</li>
+													<li>Programmed a camera to read April tag values and communicate with the robot via I2C to share the April tag number.</li>
+													<li>Employed a sensor fusion algorithm to integrate readings from a gyroscope and an accelerometer to get precise pitch angle estimation.</li>
 												</ul>
 											</div>
 											<div class="col-6 col-12-small">
@@ -64,10 +63,7 @@
 									<div class="box">
 										<h3>Video Demo</h3>
 										<div align="center">
-											<video width="100%" height="100%" controls>
-												<source src="videos/rbe2002.MP4" type="video/MP4">
-												Your browser does not support the video tag.
-											</video>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/CgkKtodrnsM" frameborder="0" allowfullscreen></iframe>
 											<p>Robot working together to navigate the maze</p>
 										</div>
 									</div>

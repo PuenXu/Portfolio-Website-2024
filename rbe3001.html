@@ -40,17 +40,32 @@
 									<!-- Box -->
 									<div class="box">
 										<h3>Project Goal</h3>
-										<p>To customize and program a set of Romi robots to work together to escape from a grid-based 
-											maze that uses a variety of indicators (beacons, tags) to help your robot find the escape door.</p>
+										<p>To incorporate computer vision to identify balls of different colors, localize them with respect to the robot, and employ kinematics
+											and motion planning to move the robot towards the objects and sort them based on colors.
+										</p>
+									</div>
+									<!-- Box -->
+									<div class="box">
+										<h3>My Contributon</h3>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<ul>
+													<li>Developed a robot kinematics modeling to allow the robot to reach any configuration in task space and joint space.</li>
+													<li>Employed a motion planning algorithm to generate quintic trajectories with smooth acceleration to prevent jerk during the start and the end of motion.</li>
+													<li>Utilized a USB camera to get live feed of the balls, and detect them with MATLAB computer vision toolbox.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-small">
+												<img src="images/3001.jpg" width="80%" height=auto alt="" />
+											</div>
+										</div>
 									</div>
 									<!-- Box -->
 									<div class="box">
 										<h3>Video Demo</h3>
 										<div align="center">
-											<video width="640" height="360" controls>
-												<source src="videos/rbe3001.MP4" type="video/MP4">
-												Your browser does not support the video tag.
-											</video>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/O2TyX4YLelU" frameborder="0" allowfullscreen></iframe>
+											<p>Robot sorting balls of different colors autonomously</p>
 										</div>
 									</div>
 								</div>

@@ -40,17 +40,33 @@
 									<!-- Box -->
 									<div class="box">
 										<h3>Project Goal</h3>
-										<p>To customize and program a set of Romi robots to work together to escape from a grid-based 
-											maze that uses a variety of indicators (beacons, tags) to help your robot find the escape door.</p>
+										<p>To program the robot to create a map of the unknown maze with frontier exploration algorithm, and to return to the origin 
+											using A* algorithm path planning. Furthermore, the robot is to be relocated, and it needs to relocalize itself in the maze using
+											AMCL algorithm based on the self-generated map.
+										</p>
+									</div>
+									<!-- Box -->
+									<div class="box">
+										<h3>My Contributon</h3>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<ul>
+													<li>Developed drive functions to allow the robot to reach any given pose upon turning to target, driving to target position, and rotating to target heading.</li>
+													<li>Employed board detection and dilation techniques to generate C-space of the robot with given padding.</li>
+													<li>Created A* search algorithms to allow the robot to find the optimal path to any point in the maze from any starting position.</li>
+												</ul>
+											</div>
+											<div class="col-6 col-12-small">
+												<img src="images/3002.jpg" width="80%" height=auto alt="" />
+											</div>
+										</div>
 									</div>
 									<!-- Box -->
 									<div class="box">
 										<h3>Video Demo</h3>
 										<div align="center">
-											<video width="640" height="360" controls>
-												<source src="videos/rbe3002.MP4" type="video/MP4">
-												Your browser does not support the video tag.
-											</video>
+											<iframe width="560" height="315" src="https://www.youtube.com/embed/yeZilQoGivQ" frameborder="0" allowfullscreen></iframe>
+											<p>Robot navigation unknown map using SLAM and AMCL</p>
 										</div>
 									</div>
 								</div>
