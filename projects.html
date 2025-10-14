@@ -119,11 +119,12 @@
 			<div class="inner">
 
 				<!-- Search -->
-				<!-- <section id="search" class="alt">
-					<form method="post" action="#">
-						<input type="text" name="query" id="query" placeholder="Search" />
+				<section id="search" class="alt">
+					<form onsubmit="return false;" autocomplete="off">
+					<input type="text" id="query" placeholder="Search" onkeyup="searchProject(event)" onfocus="showSuggestions()" />
+					<ul id="suggestions" style="display:none; position:absolute; background:#fff; border:1px solid #ccc; list-style:none; padding:5px; margin:0; max-height:150px; overflow-y:auto; z-index:1000;"></ul>
 					</form>
-				</section> -->
+				</section>
 
 				<!-- Menu -->
 				<nav id="menu">
@@ -165,6 +166,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/search.js"></script>
 
 </body>
 
