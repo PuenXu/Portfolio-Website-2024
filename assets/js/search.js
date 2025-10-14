@@ -1,8 +1,9 @@
 const projectLinks = {
   "home": "index.html",
+  "paper": "publications.html",
+  "portfolio": "projects.html",
   "robotics": "projects.html",
-  "paper": "research.html",
-  "portfolio": "projects.html"
+  "publications": "publications.html",
 };
 
 // Show suggestions in the dropdown
@@ -12,7 +13,9 @@ function showSuggestions() {
   const value = input.value.toLowerCase();
 
   // Filter keywords that match current input
-  const matches = Object.keys(projectLinks).filter(key => key.toLowerCase().includes(value));
+  let matches = Object.keys(projectLinks).filter(key => key.toLowerCase().includes(value));
+
+  matches = matches.slice(0, 3);
 
   if (matches.length === 0) {
     suggestions.style.display = "none";
