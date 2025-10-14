@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+    Experiences Page — adapted from Publications layout (dot spacing & logo size updated)
+-->
+<html>
+  <head>
+    <title>Experiences</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* ---------- TIMELINE STYLES (no vertical line, wide logos) ---------- */
+        .timeline {
+        position: relative;
+        margin: 40px 0;
+        padding-left: 80px; /* extra spacing for dot and logo */
+        }
+
+        .timeline-item {
+        position: relative;
+        margin-bottom: 30px;
+        padding: 15px 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+
+        display: flex;           /* logo + content side-by-side */
+        gap: 25px;
+        align-items: center;
+        }
+
+        /* Blue dot — placed farther left */
+        .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -45px; /* more space between dot and block */
+        top: 50%;
+        transform: translateY(-50%);
+        width: 14px;
+        height: 14px;
+        background-color: #5dade2;
+        border-radius: 50%;
+        border: 2px solid white;
+        box-shadow: 0 0 0 2px #5dade2;
+        }
+
+        /* Wider, clean placeholder for logos */
+        .timeline-logo {
+        width: 180px;  /* increased width for long logos */
+        height: 70px;
+        object-fit: contain;
+        border-radius: 6px;
+        flex-shrink: 0;
+        background: none; /* no grey background */
+        }
+
+        .timeline-content {
+        flex: 1;
+        }
+
+        .timeline-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        }
+
+        .timeline-subtitle {
+        font-size: 14px;
+        color: #666;
+        margin: 6px 0 10px;
+        }
+
+        .timeline-description {
+        font-size: 14px;
+        color: #444;
+        margin: 0;
+        }
+
+        .section-title {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+        .timeline {
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .timeline-item::before {
+            left: 50%;
+            top: 10px;
+            transform: translate(-50%, 0);
+        }
+
+        .timeline-logo {
+            width: 140px;
+            height: 60px;
+        }
+        }
+
+    </style>
+  </head>
+
+  <body class="is-preload">
+    <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <!-- Header -->
+          <header id="header">
+            <a href="index.html" class="logo">
+              <strong>Puen Xu</strong> Portfolio Website
+            </a>
+            <ul class="icons">
+              <li><a href="https://github.com/PuenXu" class="icon brands fa-github"><span class="label">Github</span></a></li>
+              <li><a href="https://www.linkedin.com/in/puen-xu/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+              <li><a href="https://upenn.joinhandshake.com/profiles/60767548" class="icon solid fa-handshake"><span class="label">Handshake</span></a></li>
+            </ul>
+          </header>
+
+          <!-- Content -->
+          <section>
+            <header class="main">
+              <h1 style="font-size: 2.25rem; font-weight: bold;">Experiences</h1>
+            </header>
+
+            <p>A chronological overview of my education, work, and teaching experiences.</p>
+
+            <!-- Education Section -->
+            <h2 class="section-title">Education</h2>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <img class="timeline-logo" src="images/logos/penn_logo.png" alt="University of Pennsylvania logo (placeholder)" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">University of Pennsylvania</h3>
+                  <p class="timeline-subtitle">M.S.E. in Robotics • 2023–2025</p>
+                  <p class="timeline-description">
+                    Focused on computer vision, control systems, and autonomous aerial robotics. Thesis on agile flight and visual navigation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">WPI</h3>
+                  <p class="timeline-subtitle">B.S. in Robotics Engineering • 2019–2023</p>
+                  <p class="timeline-description">
+                    Graduated with honors. Capstone project on dynamic control of quadrotors.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Work Experience Section -->
+            <h2 class="section-title">Work Experience</h2>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <img class="timeline-logo" src="images/placeholder_logo.png" alt="NVIDIA logo (placeholder)" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Robotics Research Intern</h3>
+                  <p class="timeline-subtitle">NVIDIA Research • Summer 2024</p>
+                  <p class="timeline-description">
+                    Worked on reinforcement learning for autonomous drone navigation. Developed perception models and flight control systems.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <img class="timeline-logo" src="images/placeholder_logo.png" alt="Boston Dynamics logo (placeholder)" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Mechanical Engineering Intern</h3>
+                  <p class="timeline-subtitle">Boston Dynamics • Summer 2023</p>
+                  <p class="timeline-description">
+                    Assisted in prototyping and testing actuators for legged robots, contributing to efficiency optimization.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Teaching Experience Section -->
+            <h2 class="section-title">Teaching Experience</h2>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <img class="timeline-logo" src="images/placeholder_logo.png" alt="UPenn logo (placeholder)" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Teaching Assistant — Robotics Systems</h3>
+                  <p class="timeline-subtitle">University of Pennsylvania • 2024–2025</p>
+                  <p class="timeline-description">
+                    Led lab sessions, graded assignments, and developed instructional materials for an upper-level robotics course.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div id="sidebar">
+        <div class="inner">
+          <section id="search" class="alt">
+            <form onsubmit="return false;" autocomplete="off">
+              <input type="text" id="query" placeholder="Search" onkeyup="searchProject(event)" onfocus="showSuggestions()" />
+              <ul id="suggestions" style="display:none; position:absolute; background:#fff; border:1px solid #ccc; list-style:none; padding:5px; margin:0; max-height:150px; overflow-y:auto; z-index:1000;"></ul>
+            </form>
+          </section>
+
+          <nav id="menu">
+            <header class="major"><h2>Menu</h2></header>
+            <ul>
+              <li><a href="index.html">Homepage</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="publications.html">Publications</a></li>
+            </ul>
+          </nav>
+
+          <section>
+            <header class="major"><h2>Get in touch</h2></header>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">xupuen1223@gmail.com</li>
+              <li class="icon solid fa-home">Philadelphia, PA</li>
+            </ul>
+          </section>
+
+          <footer id="footer">
+            <p class="copyright">
+              &copy; Puen Xu. All rights reserved. Design:
+              <a href="https://html5up.net">HTML5 UP</a>.
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/search.js"></script>
+  </body>
+</html>
