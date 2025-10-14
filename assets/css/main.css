@@ -1846,16 +1846,25 @@ button,
         height: 100%; }
       .posts article:nth-last-child(1):after, .posts article:nth-last-child(2):after, .posts article:nth-last-child(3):after {
         display: none; } }
-  @media screen and (max-width: 1680px) {
+  /* @media screen and (max-width: 1680px) {
     .posts article {
       width: calc(50% - 6em); }
       .posts article:nth-last-child(3) {
-        margin-bottom: 6em; } }
+        margin-bottom: 6em; } } */
+  @media screen and (min-width: 1025px) {
+    .posts article {
+      width: calc(33.333% - 6em);
+    }
+  }
   @media screen and (min-width: 481px) and (max-width: 1680px) {
-    .posts article:nth-child(2n + 1):before {
-      display: none; }
-    .posts article:nth-child(2n + 1):after {
-      width: 100%; }
+
+    /* Fix vertical dividers */
+    .posts article:nth-child(3n + 1):before {
+      display: none;
+    }
+    .posts article:nth-child(3n + 1):after {
+      width: 100%;
+    }
     .posts article:nth-last-child(1), .posts article:nth-last-child(2) {
       margin-bottom: 0; }
       .posts article:nth-last-child(1):before, .posts article:nth-last-child(2):before {
