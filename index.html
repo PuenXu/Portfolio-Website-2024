@@ -3,6 +3,7 @@
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	The layout styling adapted from Professor Antonio Loquercio's website.
 -->
 <html lang="en">
 
@@ -13,11 +14,10 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/academicons-1.9.2/css/academicons.min.css" />
 	<style>
-		/* Hide items beyond the first ten initially */
 		.hidden {
 			display: none;
 		}
-    </style>
+	</style>
 </head>
 
 <body class="is-preload">
@@ -31,25 +31,31 @@
 
 				<!-- Header -->
 				<header id="header">
-									<a href="index.html" class="logo"><strong>Puen Xu</strong> Portfolio Website</a>
-									<ul class="icons">
-										<li><a href="https://github.com/PuenXu" class="icon brands fa-github"><span class="label">Github</span></a></li>
-										<li><a href="https://www.linkedin.com/in/puen-xu/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://upenn.joinhandshake.com/profiles/60767548" class="icon solid fa-handshake"><span class="label">Handshake</span></a></li>
-									</ul>
-								</header>
+					<a href="index.html" class="logo"><strong>Puen Xu</strong> Portfolio Website</a>
+					<ul class="icons">
+						<li><a href="https://github.com/PuenXu" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/puen-xu/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://upenn.joinhandshake.com/profiles/60767548" class="icon solid fa-handshake"><span class="label">Handshake</span></a></li>
+					</ul>
+				</header>
 
 				<!-- Banner -->
 				<section id="banner">
 					<div class="content">
 						<header class="main">
-						<h1 style="font-size: 2.25rem; font-weight: bold;">Puen Xu</h1>
+							<h1 style="font-size: 2.25rem; font-weight: bold;">Puen Xu</h1>
 						</header>
 						<p style="font-size: 1rem; font-weight: bold;">
-						Robotics MSE Student at <a href="https://www.seas.upenn.edu/">University of Pennsylvania</a>.
+							Robotics MSE Student at <a href="https://www.seas.upenn.edu/">University of Pennsylvania</a>.
 						</p>
 						<p>
-							I am a second-year robotics master's student at the GRASP Lab, University of Pennsylvania, working under the supervision of Dr. Linh Thi Xuan Phan. My current research focuses on security in multi-robot systems. I obtained a Bachelor of Science degree in Robotics Engineering from Worcester Polytechnic Institute with High Distinction in May 2024, where I worked on loco-manipulation of a quadruped robot advised by Dr. Mahdi Agheli. I am seeking R&D positions in the Robotics Industry and PhD positions for Fall 2026 in Academia. Please feel free to explore my portfolio website to learn more about my experiences and journey.
+							I am a second-year robotics master's student at the GRASP Lab, University of Pennsylvania, working under the supervision of Dr. Linh Thi Xuan Phan. My current research focuses on security in multi-robot systems. I obtained a Bachelor of Science degree in Robotics Engineering from Worcester Polytechnic Institute with High Distinction in May 2024, where I worked on loco-manipulation of a quadruped robot advised by Dr. Mahdi Agheli.
+						</p>
+						<p>
+							I am seeking R&D positions in the Robotics Industry and PhD positions for Fall 2026 in Academia. Please feel free to explore my portfolio website to learn more about my experiences and journey.
+						</p>
+						<p>
+							I am seeking R&D positions in the Robotics Industry and PhD positions for Fall 2026 in Academia. Please feel free to explore my portfolio website to learn more about my experiences and journey.
 						</p>
 						<!-- <p>
 							I received my doctoral degree at the University of Zurich with the <a href="http://rpg.ifi.uzh.ch/">Robotics and Perception Group</a> working with <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a>. After that, I was a PostDoc at <a href="https://bair.berkeley.edu/">BAIR</a> with <a href="http://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a>.
@@ -66,6 +72,7 @@
 					</span>
 				</section>
 
+				<!-- News Section -->
 				<section>
 					<header class="major">
 						<h2>News</h2>
@@ -75,7 +82,6 @@
 							<!-- <ul>
 								<li><b>Aug, 2024</b>. Started my lab at Penn! From now on, you can find news on my <a href="https://jirl-upenn.github.io/index.html">lab website</a>!</li>
 								<li class="hidden"></li><li><b>July, 2023</b>. I gave a keynote at the Conference of Basic Sciences in Beijing.</li>
-								
 							</ul>
 							<button id="show-button">Show All Items</button>
 							<button id="hide-button" style="display: none;">Hide Items</button> -->
@@ -87,24 +93,25 @@
 					var showButton = document.getElementById("show-button");
 					var hideButton = document.getElementById("hide-button");
 					var hiddenItems = document.querySelectorAll(".hidden");
-		
-					showButton.addEventListener("click", function () {
-					  for (var i = 0; i < hiddenItems.length; i++) {
-						hiddenItems[i].style.display = "list-item";
-					  }
-					  showButton.style.display = "none";
-					  hideButton.style.display = "inline-block";
-					});
-		
-					hideButton.addEventListener("click", function () {
-					  for (var i = 0; i < hiddenItems.length; i++) {
-						hiddenItems[i].style.display = "none";
-					  }
-					  showButton.style.display = "inline-block";
-					  hideButton.style.display = "none";
-					});
-				  </script>
 
+					showButton.addEventListener("click", function () {
+						for (var i = 0; i < hiddenItems.length; i++) {
+							hiddenItems[i].style.display = "list-item";
+						}
+						showButton.style.display = "none";
+						hideButton.style.display = "inline-block";
+					});
+
+					hideButton.addEventListener("click", function () {
+						for (var i = 0; i < hiddenItems.length; i++) {
+							hiddenItems[i].style.display = "none";
+						}
+						showButton.style.display = "inline-block";
+						hideButton.style.display = "none";
+					});
+				</script>
+
+				<!-- Awards Section -->
 				<section>
 					<header class="major">
 						<h2>Awards</h2>
@@ -148,8 +155,8 @@
 					</ul>
 
 				</section> -->
-<!-- 
-				<section>
+
+				<!-- <section>
 					<header class="major">
 						<h2>Teaching</h2>
 					</header>
@@ -168,39 +175,33 @@
 		<div id="sidebar">
 			<div class="inner">
 
-				<!-- Search -->
-				<!-- <section id="search" class="alt">
-					<form method="post" action="#">
-						<input type="text" name="query" id="query" placeholder="Search" />
-					</form>
-				</section> -->
-
 				<!-- Menu -->
 				<nav id="menu">
-								<header class="major">
-									<h2>Menu</h2>
-								</header>
-								<ul>
-									<li><a href="index.html">Homepage</a></li>
-									<li><a href="research.html">Research</a></li>
-									<li><a href="projects.html">Projects</a></li>
-								</ul>
-							</nav>
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+						<li><a href="research.html">Research</a></li>
+						<li><a href="projects.html">Projects</a></li>
+					</ul>
+				</nav>
 
+				<!-- Get in Touch -->
 				<section>
-				<header class="major">
-					<h2>Get in touch</h2>
-				</header>
-				<ul class="contact">
-					<li class="icon solid fa-envelope">xupuen1223@gmail.com</li>
-					<li class="icon solid fa-home">Philadelphia, PA</li>
-				</ul>
-			</section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<ul class="contact">
+						<li class="icon solid fa-envelope">xupuen1223@gmail.com</li>
+						<li class="icon solid fa-home">Philadelphia, PA</li>
+					</ul>
+				</section>
 
-		<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">&copy; Puen Xu. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Puen Xu. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+				</footer>
 
 			</div>
 		</div>

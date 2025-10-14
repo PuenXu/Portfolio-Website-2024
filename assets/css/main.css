@@ -2189,6 +2189,7 @@ button,
     margin: 0 0 2em 4em;
     width: 50%; }
     #banner .image img {
+      /* max-height: 50em; */
       height: 80%;
       -moz-object-fit: cover;
       -webkit-object-fit: cover;
@@ -2234,6 +2235,12 @@ button,
   @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 35vh; } }
+  #banner {
+      display: flex;
+      align-items: flex-start;  /* container no longer stretches to image */
+      padding: 2em 0;           /* optional: reduce vertical padding */
+    }
+
 
 /* Footer */
 #footer .copyright {
