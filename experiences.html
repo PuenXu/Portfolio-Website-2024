@@ -127,6 +127,20 @@
             margin-top: 0px; /* reduce space from previous element */
         }
 
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+
+            /* Remove the dot on mobile */
+            .timeline-item::before {
+                display: none;
+            }
+
+            .timeline {
+                padding-left: 0px; /* adjust as needed */
+            }
+
+        }
+
     </style>
   </head>
 
