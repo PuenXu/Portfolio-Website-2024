@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <!--
-    Experiences Page — adapted from Publications layout (dot spacing & logo size updated)
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  The layout styling adapted from Professor Antonio Loquercio's website.
 -->
 <html>
   <head>
@@ -127,10 +130,15 @@
             margin-top: 0px; /* reduce space from previous element */
         }
 
-        .timeline-item.wpi-logo .timeline-logo {
+        .timeline-item.small-logo .timeline-logo {
             padding: 8px; /* adjust as needed */
             box-sizing: border-box; /* ensures padding doesn’t increase total width */
             background: #fff; /* optional: match the timeline item background */
+        }
+
+        .timeline-item.large-logo .timeline-logo {
+          transform: scale(1.15); /* slightly larger */
+          transform-origin: center;
         }
 
         /* Responsive adjustments */
@@ -194,7 +202,7 @@
                 </div>
               </div>
 
-              <div class="timeline-item wpi-logo">
+              <div class="timeline-item small-logo">
                 <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="WPI logo" />
                 <div class="timeline-content">
                   <h3 class="timeline-title">Worcester Polytechnic Institute</h3>
@@ -234,11 +242,11 @@
             </header>
 
             <div class="timeline">
-              <div class="timeline-item">
-                <img class="timeline-logo" src="images/logos/grasp_logo.png" alt="GRASP logo" />
+              <div class="timeline-item large-logo">
+                <img class="timeline-logo" src="images/logos/penn_engineering_logo.png" alt="GRASP logo" />
                 <div class="timeline-content">
-                  <h3 class="timeline-title">Master's Thesis</h3>
-                  <p class="timeline-subtitle">GRASP Lab & R2D2 Lab • May 2025 - Present</p>
+                  <h3 class="timeline-title">Real-Time Resilient and Dependable Distributed Systems (R2D2) Lab, Penn</h3>
+                  <p class="timeline-subtitle">Master's Thesis • May 2025 - Present</p>
                   <p class="timeline-description">
                     <em>Resilient Market-based Multi-robot Exploration under Byzantine Threats</em>, Advisor: Dr. Linh Thi Xuan Phan
                   </p>
@@ -264,7 +272,7 @@
                   </p>
                 </div>
               </div>
-              <div  class="timeline-item">
+              <div  class="timeline-item large-logo">
                 <img class="timeline-logo" src="images/logos/wpi_robotics_logo.png" alt="WPI logo" />
                 <div class="timeline-content">
                   <h3 class="timeline-title">Robotics Engineering Department, WPI</h3>
@@ -274,7 +282,7 @@
                   </p>
                 </div>
               </div>
-              <div class="timeline-item wpi-logo">
+              <div class="timeline-item small-logo">
                 <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="WPI logo" />
                 <div class="timeline-content">
                   <h3 class="timeline-title">Mathematical Sciences Department, WPI</h3>
