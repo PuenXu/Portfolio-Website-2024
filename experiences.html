@@ -127,6 +127,12 @@
             margin-top: 0px; /* reduce space from previous element */
         }
 
+        .timeline-item.wpi-logo .timeline-logo {
+            padding: 8px; /* adjust as needed */
+            box-sizing: border-box; /* ensures padding doesn’t increase total width */
+            background: #fff; /* optional: match the timeline item background */
+        }
+
         /* Responsive adjustments */
         @media (max-width: 600px) {
 
@@ -178,32 +184,32 @@
 
             <div class="timeline">
               <div class="timeline-item">
-                <img class="timeline-logo" src="images/logos/penn_logo.png" alt="University of Pennsylvania logo (placeholder)" />
+                <img class="timeline-logo" src="images/logos/penn_logo.png" alt="Penn logo" />
                 <div class="timeline-content">
                   <h3 class="timeline-title">University of Pennsylvania</h3>
-                  <p class="timeline-subtitle">M.S.E. in Robotics • 2023–2025</p>
+                  <p class="timeline-subtitle">M.S.E. in Robotics • Aug 2024 – May 2026</p>
                   <p class="timeline-description">
-                    Focused on computer vision, control systems, and autonomous aerial robotics. Thesis on agile flight and visual navigation.
+                    GRASP Lab, GPA: 3.95 / 4.0, Advisor: Dr. Linh Thi Xuan Phan & Dr. Michael Posa
                   </p>
                 </div>
               </div>
 
-              <div class="timeline-item">
-                <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="" />
+              <div class="timeline-item wpi-logo">
+                <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="WPI logo" />
                 <div class="timeline-content">
-                  <h3 class="timeline-title">WPI</h3>
-                  <p class="timeline-subtitle">B.S. in Robotics Engineering • 2019–2023</p>
+                  <h3 class="timeline-title">Worcester Polytechnic Institute</h3>
+                  <p class="timeline-subtitle">B.S. in Robotics Engineering • Aug 2020 – May 2024</p>
                   <p class="timeline-description">
-                    Graduated with honors. Capstone project on dynamic control of quadrotors.
+                    Graduation with High Distinction, GPA: 3.95 / 4.0, Advisor: Dr. Mahdi Agheli
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- Work Experience Section -->
-            <header class="major">
+            <!-- Industry Experience Section -->
+            <!-- <header class="major">
               <h2 style="font-size: 1.35rem; font-weight: bold;">
-                Work Experiences
+                Industry Experiences
               </h2>
             </header>
 
@@ -218,14 +224,23 @@
                   </p>
                 </div>
               </div>
+            </div> -->
 
+            <!-- Research Experience Section -->
+            <header class="major">
+              <h2 style="font-size: 1.35rem; font-weight: bold;">
+                Research Experiences
+              </h2>
+            </header>
+
+            <div class="timeline">
               <div class="timeline-item">
-                <img class="timeline-logo" src="images/placeholder_logo.png" alt="Boston Dynamics logo (placeholder)" />
+                <img class="timeline-logo" src="images/logos/grasp_logo.png" alt="GRASP logo" />
                 <div class="timeline-content">
-                  <h3 class="timeline-title">Mechanical Engineering Intern</h3>
-                  <p class="timeline-subtitle">Boston Dynamics • Summer 2023</p>
+                  <h3 class="timeline-title">Master's Thesis</h3>
+                  <p class="timeline-subtitle">GRASP Lab & R2D2 Lab • May 2025 - Present</p>
                   <p class="timeline-description">
-                    Assisted in prototyping and testing actuators for legged robots, contributing to efficiency optimization.
+                    <em>Resilient Market-based Multi-robot Exploration under Byzantine Threats</em>, Advisor: Dr. Linh Thi Xuan Phan
                   </p>
                 </div>
               </div>
@@ -240,12 +255,32 @@
 
             <div class="timeline">
               <div class="timeline-item">
-                <img class="timeline-logo" src="images/placeholder_logo.png" alt="UPenn logo (placeholder)" />
+                <img class="timeline-logo" src="images/logos/grasp_logo.png" alt="GRASP logo" />
                 <div class="timeline-content">
-                  <h3 class="timeline-title">Teaching Assistant — Robotics Systems</h3>
-                  <p class="timeline-subtitle">University of Pennsylvania • 2024–2025</p>
+                  <h3 class="timeline-title">GRASP Lab, Penn</h3>
+                  <p class="timeline-subtitle">Teaching Assistant • Jul 2025 – Aug 2025</p>
                   <p class="timeline-description">
-                    Led lab sessions, graded assignments, and developed instructional materials for an upper-level robotics course.
+                    Course: ROBO Master’s Summer Course
+                  </p>
+                </div>
+              </div>
+              <div  class="timeline-item">
+                <img class="timeline-logo" src="images/logos/wpi_robotics_logo.png" alt="WPI logo" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Robotics Engineering Department, WPI</h3>
+                  <p class="timeline-subtitle">Student Assistant • Aug 2023 – May 2024</p>
+                  <p class="timeline-description">
+                    Courses: Unified Robotics III - Manipulation, Unified Robotics IV - Navigation
+                  </p>
+                </div>
+              </div>
+              <div class="timeline-item wpi-logo">
+                <img class="timeline-logo" src="images/logos/wpi_logo.png" alt="WPI logo" />
+                <div class="timeline-content">
+                  <h3 class="timeline-title">Mathematical Sciences Department, WPI</h3>
+                  <p class="timeline-subtitle">Peer Learning Assistant • Aug 2022 – May 2023</p>
+                  <p class="timeline-description">
+                    Courses: Calculus III, Applied Statistics I, Ordinary Differential Equations
                   </p>
                 </div>
               </div>
