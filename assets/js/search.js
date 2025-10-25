@@ -1,9 +1,10 @@
 const projectLinks = {
   "home": "index.html",
-  "paper": "publications.html",
+  // "paper": "publications.html",
+  "career": "experiences.html",
   "portfolio": "projects.html",
   "robotics": "projects.html",
-  "publications": "publications.html",
+  // "publications": "publications.html",
 };
 
 // Show suggestions in the dropdown
