@@ -42,23 +42,82 @@
 					<p>A list of projects.</p>
 
 					<header class="major">
-						<h2 style="font-size: 1.35rem; font-weight: bold;">Capstone Projects</h2>
+						<h2 style="font-size: 1.35rem; font-weight: bold;">Research Projects</h2>
 					</header>
 
 					<div class="posts">
 						<article>
-							<a class="image"><img src="images/projects/biqu.jpg" alt="" /></a>
+							<a class="image" href="#" onclick="openModal('BiQu')"><img src="images/projects/biqu.jpg" alt="" /></a>
 							<h4>Bimodal Quadruped Robot</h4>
 							<strong>Senior Capstone, WPI</strong>
 							<p>Designed and built a 3-DOF robotic arm with a 2-DOF gripper for the Unitree Go1, integrating custom PID motor control and ROS for agile loco-manipulation.</p>
 						</article>
 
+						<!-- Popup-->
+						<div id="BiQu" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('BiQu')">&times;</span>
+								<h3>Bimodal Quadruped Robot</h3>
+								<p>
+								Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.Designed and built a robotic arm and gripper for the Unitree Go1, integrating custom PID motor control and ROS 
+								for dynamic loco-manipulation.
+								
+								</p>
+								<ul>
+								<li><strong>Course:</strong> Senior Capstone, WPI</li>
+								<li><strong>Tools:</strong> ROS, C++, SolidWorks</li>
+								<li><strong>Team Size:</strong> 4</li>
+								</ul>
+							</div>
+						</div>
+
 						<article>
-							<a class="image"><img src="images/projects/bird.jpg" alt="" /></a>
+							<a class="image" href="#" onclick="openModal('Bird')"><img src="images/projects/bird.jpg" alt="" /></a>
 							<h4>Robotic Bird Deterrent</h4>
 							<strong>Independent Study, WPI</strong>
 							<p>Designed and built a small proof-of-concept robot to patrol a power transmission line and discourage birds from congregating on the wire.</p>
 						</article>
+
+						<div id="Bird" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal('Bird')">&times;</span>
+								<h3>Robotic Bird Deterrent</h3>
+								<p>
+								Developed a proof-of-concept robot to move along transmission lines and deter birds using motion and sound.
+								</p>
+								<ul>
+								<li><strong>Course:</strong> Independent Study, WPI</li>
+								<li><strong>Tools:</strong> Arduino, SolidWorks, 3D Printing</li>
+								<li><strong>Team Size:</strong> 1</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 
 					<header class="major">
@@ -111,6 +170,71 @@
 				</section>
 			</div>
 		</div>
+
+		<style>
+			.modal {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			left: 0; top: 0;
+			width: 100%; height: 100%;
+			background-color: rgba(0,0,0,0.6);
+			justify-content: center;
+			align-items: center;
+			}
+
+			.modal-content {
+			background: white;
+			width: 50%;
+			padding: 2rem;
+			/* border-radius: 1rem; */
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+			animation: pop 0.3s ease;
+			max-height: 80vh;
+			overflow-y: auto;
+			}
+
+			@keyframes pop {
+			from { transform: scale(0.9); opacity: 0; }
+			to { transform: scale(1); opacity: 1; }
+			}
+
+			.close {
+			float: right;
+			font-size: 1.5rem;
+			cursor: pointer;
+			color: #333;
+			}
+			.close:hover {
+			color: #e74c3c;
+			}
+		</style>
+
+		<script>
+			function openModal(id) {
+			document.getElementById(id).style.display = "flex";
+			}
+
+			function closeModal(id) {
+			document.getElementById(id).style.display = "none";
+			}
+
+			// Close modal when clicking outside
+			window.onclick = function(event) {
+			const modals = document.querySelectorAll('.modal');
+			modals.forEach(modal => {
+				if (event.target === modal) modal.style.display = "none";
+			});
+			};
+
+			// Add pointer cursor via JS
+			document.addEventListener("DOMContentLoaded", function() {
+			const clickableImages = document.querySelectorAll(".image");
+			clickableImages.forEach(img => {
+				img.style.cursor = "pointer";
+			});
+			});
+		</script>
 
 		<!-- Sidebar -->
 		<div id="sidebar">
