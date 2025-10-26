@@ -96,9 +96,31 @@
 								<p>
 									This work presents an open-source framework that facilitates planning through contact, enhancing robots’ capabilities in logistics, construction, and even planetary exploration. Our approach leverages a versatile trajectory optimization method and real-time perception to generate dynamic motions, coordinated through whole-body control. We validate our framework’s effectiveness on the Unitree Go1 equipped with a custom arm, demonstrating its application across various gaits and jumping maneuvers, as well as in simulated environments on humanoid robots like HURON and Atlas. The results showcase the framework’s potential to enable complex athletic tasks and manipulation while navigating diverse terrains.
 								</p>
+
+								<hr>
+
+								<h4>Contributions</h4>
+								<ul>
+									<li>Designed and fabricated a 3-DOF robotic arm with a 2-DOF gripper using SolidWorks and 3D printing, performing torque and structural analysis to select motors and gearboxes for required payload handling. </li>
+									<li>Developed and wired custom motor drives and PCB using EasyEDA, integrating power distribution, motor control, and battery housing into a compact, modular electronics enclosure.</li>
+									<li>Integrated the arm with ROS and the Jetson Nano on the Unitree Go1, enabling real-time motion control and communication with the quadruped’s onboard systems for precise loco-manipulation.</li>
+								</ul>
+
+								<hr>
+
 								<h4>CAD Design</h4>
 								<img src="images/projects/biqu/biqu_cad1.PNG" alt="BiQu Robot" class="modal-img-left">
 								<img src="images/projects/biqu/biqu_cad2.PNG" alt="BiQu Robot" class="modal-img-right">
+
+								<div style="clear: both;"></div><hr>
+								
+								<h4>Hardware</h4>
+								<img src="images/projects/biqu/biqu_hardware.png" alt="BiQu Robot" class="modal-img-center">
+
+								<div style="clear: both;"></div><hr>
+
+								<h4>Software</h4>
+								<img src="images/projects/biqu/biqu_software.png" alt="BiQu Robot" class="modal-img-center-large">
 								</div>
 
 								<div style="clear: right;"></div>
@@ -211,6 +233,20 @@
 			margin-right: 1.5rem;
 			margin-bottom: 1rem;
 			max-width: 45%; /* smaller size */
+			height: auto;
+			}
+
+			.modal-img-center {
+			display: block;
+			margin: 0 auto 1rem auto; /* centers image and adds bottom margin */
+			max-width: 50%; /* smaller size */
+			height: auto;
+			}
+
+			.modal-img-center-large {
+			display: block;
+			margin: 0 auto 1rem auto; /* centers image and adds bottom margin */
+			max-width: 65%; /* smaller size */
 			height: auto;
 			}
 
